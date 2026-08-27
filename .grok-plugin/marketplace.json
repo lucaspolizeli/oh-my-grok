@@ -1,0 +1,27 @@
+{
+  "name": "oh-my-grok",
+  "description": "Grok-native multi-agent orchestration inspired by oh-my-claudecode 5.0",
+  "owner": {
+    "name": "lucaspolizeli"
+  },
+  "plugins": [
+    {
+      "name": "oh-my-grok",
+      "description": "19 specialist agents, Tier-0 skills (plan/execute/review/verify), ralph, autopilot, team on cmux panes, and a Stop-hook persistence loop.",
+      "version": "0.1.0",
+      "author": {
+        "name": "lucaspolizeli"
+      },
+      "source": "./",
+      "category": "productivity",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "delegation",
+        "ralph",
+        "team"
+      ]
+    }
+  ],
+  "version": "0.1.0"
+}

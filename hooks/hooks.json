@@ -1,0 +1,61 @@
+{
+  "description": "oh-my-grok orchestration hooks",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$GROK_PLUGIN_ROOT/scripts/omg.py\" hook keyword-detect",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$GROK_PLUGIN_ROOT/scripts/omg.py\" hook session-start",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "spawn_subagent|Task|Agent",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$GROK_PLUGIN_ROOT/scripts/omg.py\" hook pre-tool",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$GROK_PLUGIN_ROOT/scripts/omg.py\" hook persistent-mode",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$GROK_PLUGIN_ROOT/scripts/omg.py\" hook persistent-mode",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

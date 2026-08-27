@@ -1,0 +1,17 @@
+{
+  "name": "oh-my-grok",
+  "version": "0.1.0",
+  "description": "Multi-agent orchestration for Grok Build. Port of the oh-my-claudecode 5.0 surface onto Grok plugins, skills, subagents, Stop hooks, and cmux panes.",
+  "author": {
+    "name": "oh-my-grok contributors"
+  },
+  "homepage": "https://github.com/lucaspolizeli/oh-my-grok",
+  "license": "MIT",
+  "keywords": [
+    "grok",
+    "plugin",
+    "multi-agent",
+    "orchestration",
+    "cmux"
+  ]
+}
